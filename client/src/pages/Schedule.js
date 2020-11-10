@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Home extends Component {
+class Schedule extends Component {
 	//State
 
 	//HandleChanges
@@ -10,14 +10,11 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Salon Ultimissimo</h1>
-				<p>Welcome</p>
-
+				<h1>Book Your Appointment Now</h1>
 				{/* onClick Change/handle */}
-				<button>Schedule an Appointment</button>
 			</div>
 		);
 	}
 }
 
-export default Home;
+export default Schedule;
