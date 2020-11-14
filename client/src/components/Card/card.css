@@ -1,0 +1,6 @@
+.card-container {
+	margin: auto;
+	width: 33%;
+	border: 2px solid blue;
+	padding: 10px;
+}

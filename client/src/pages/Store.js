@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Card from "../components/Card";
 
 class Store extends Component {
 	//State
@@ -12,6 +13,9 @@ class Store extends Component {
 			<div>
 				<h1>Salon Ultimissimo</h1>
 				<p>Order any of our goods for pick up</p>
+				<Card></Card>
+				<Card></Card>
+				<Card></Card>
 			</div>
 		);
 	}

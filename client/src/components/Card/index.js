@@ -1,9 +1,10 @@
 import React from "react";
+import "./card.css";
 
 function Card({ icon, title, children }) {
 	return (
 		<div>
-			<div>
+			<div className='card-container'>
 				{/* //<img /> */}
 				<h5>Item</h5>
 				<p>Description</p>
