@@ -11,7 +11,7 @@ class Store extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Salon Ultimissimo</h1>
+				<h1>Salon Ultra</h1>
 				<p>Order any of our goods for pick up</p>
 				<Card></Card>
 				<Card></Card>

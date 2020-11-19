@@ -10,7 +10,8 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Salon Ultimissimo</h1>
+				<h1>Salon Ultra</h1>
+
 				<p>Welcome</p>
 
 				{/* onClick Change/handle */}

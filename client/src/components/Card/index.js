@@ -4,7 +4,7 @@ import "./card.css";
 function Card({ icon, title, children }) {
 	return (
 		<div>
-			<div className='card-container'>
+			<div className='card'>
 				{/* //<img /> */}
 				<h5>Item</h5>
 				<p>Description</p>
