@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Container from "../components/Container";
 import Card from "../components/Card";
 
 class Store extends Component {
@@ -11,11 +12,13 @@ class Store extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Salon Ultra</h1>
-				<p>Order any of our goods for pick up</p>
-				<Card></Card>
-				<Card></Card>
-				<Card></Card>
+				<Container>
+					<h1>Salon Ultra</h1>
+					<p>Order any of our goods for pick up</p>
+					<Card></Card>
+					<Card></Card>
+					<Card></Card>
+				</Container>
 			</div>
 		);
 	}

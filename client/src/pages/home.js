@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Container from "../components/Container";
 
 class Home extends Component {
 	//State
@@ -10,12 +11,14 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Salon Ultra</h1>
+				<Container>
+					<h1>Salon Ultra</h1>
 
-				<p>Welcome</p>
+					<p>Welcome</p>
 
-				{/* onClick Change/handle */}
-				<button>Schedule an Appointment</button>
+					{/* onClick Change/handle */}
+					<button>Schedule an Appointment</button>
+				</Container>
 			</div>
 		);
 	}
