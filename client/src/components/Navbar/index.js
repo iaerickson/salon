@@ -31,7 +31,7 @@ function Navbar() {
 									: "nav-link"
 							}
 						>
-							Store
+							Schedule an Appointment
 						</Link>
 					</li>
 					<li className='nav-item'>
@@ -48,14 +48,14 @@ function Navbar() {
 					</li>
 					<li className='nav-item'>
 						<Link
-							to='/store'
+							to='/login'
 							className={
 								window.location.pathname === "/login"
 									? "nav-link active"
 									: "nav-link"
 							}
 						>
-							Store
+							Login
 						</Link>
 					</li>
 				</ul>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Container from "../components/Container";
-import Card from "../components/Card";
+import ProductCard from "../components/ProductCard";
 
 class Store extends Component {
 	//State
@@ -15,9 +15,21 @@ class Store extends Component {
 				<Container>
 					<h1>Salon Ultra</h1>
 					<p>Order any of our goods for pick up</p>
-					<Card></Card>
-					<Card></Card>
-					<Card></Card>
+					<ProductCard
+						item='Shampoo'
+						desc='Goes on first'
+						price='12.99'
+					></ProductCard>
+					<ProductCard
+						item='Conditioner'
+						desc='Makes hair silky and smooth'
+						price='7.99'
+					></ProductCard>
+					<ProductCard
+						item='Hair Spray'
+						desc='Kills ozone'
+						price='2.99'
+					></ProductCard>
 				</Container>
 			</div>
 		);
