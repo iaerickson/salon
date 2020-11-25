@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
 
-class Login extends Component {
+class SignUp extends Component {
 	render() {
 		return (
 			<div>
 				<Container>
-					<h1>Login</h1>
+					<h1>Sign Up</h1>
 					<form>
 						<h4>Email</h4>
 						<input></input>
@@ -15,21 +15,23 @@ class Login extends Component {
 						<h4>Password</h4>
 						<input></input>
 						<br />
+						<h4>Confirm Password</h4>
+						<input></input>
 						<br />
-						<button>Login</button>
+						<button>Sign Up</button>
 						<p>
-							New Guest? Click{" "}
+							Returning Customer? Click{" "}
 							<Link
-								to='/signup'
+								to='/login'
 								className={
-									window.location.pathname === "/signup"
+									window.location.pathname === "/login"
 										? "nav-link active"
 										: "nav-link"
 								}
 							>
 								Here
 							</Link>
-							to register (it's easy)
+							to login
 						</p>
 					</form>
 				</Container>
@@ -38,4 +40,4 @@ class Login extends Component {
 	}
 }
 
-export default Login;
+export default SignUp;

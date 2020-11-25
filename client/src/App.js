@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Store from "./pages/Store";
 import Schedule from "./pages/Schedule";
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 					<Route exact path='/store' component={Store} />
 					<Route exact path='/schedule' component={Schedule} />
 					<Route exact path='/login' component={Login} />
+					<Route exact path='/signup' component={SignUp} />
 				</Switch>
 			</div>
 		</Router>
