@@ -1,4 +1,5 @@
 import React from "react";
+import PlusMinusBtn from "../PlusMinusBtn";
 import "./productCard.css";
 
 function ProductCard(props) {
@@ -10,6 +11,8 @@ function ProductCard(props) {
 				<p>{props.desc}</p>
 				<p>{props.price}</p>
 			</div>
+			<PlusMinusBtn />
+			<button>Add to Cart</button>
 		</div>
 	);
 }
