@@ -21,110 +21,124 @@ class SignUpForm extends Component {
 	render() {
 		return (
 			<form onSubmit={this.handleSubmit}>
-				<label>
-					Email:
+				<div className='form-group'>
+					<label>Email:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					Password:
+				</div>
+				<div className='form-group'>
+					<label>Password:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					Confirm Password:
+				</div>
+				<div className='form-group'>
+					<label>Confirm Password:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					First Name:
+				</div>
+				<div className='form-group form-row'>
+					<div className='col'>
+						<label>First Name:</label>
+						<input
+							type='text'
+							className='form-control'
+							value={this.state.value}
+							onChange={this.handleChange}
+						/>
+					</div>
+					<div className='col'>
+						<label>Last Name:</label>
+						<input
+							type='text'
+							className='form-control'
+							value={this.state.value}
+							onChange={this.handleChange}
+						/>
+					</div>
+				</div>
+				<div className='form-group form-row'>
+					<div className='col'>
+						<label>Pronouns:</label>
+						<input
+							type='text'
+							className='form-control'
+							value={this.state.value}
+							onChange={this.handleChange}
+						/>
+					</div>
+					<div className='col'>
+						<label>Birthday:</label>
+						<input
+							type='text'
+							className='form-control'
+							value={this.state.value}
+							onChange={this.handleChange}
+						/>
+					</div>
+				</div>
+
+				<div className='form-group'>
+					<label>Address 1:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					Last Name:
+
+					<label>Address 2:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					Pronouns:
+
+					<label>City:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					Birthday:
+
+					<label>State:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					Address 1:
+
+					<label>Zipcode:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					Address 2:
+				</div>
+				<div className='form-group'>
+					<label>Phone Number:</label>
 					<input
 						type='text'
+						className='form-control'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
-				</label>
-				<label>
-					City:
-					<input
-						type='text'
-						value={this.state.value}
-						onChange={this.handleChange}
-					/>
-				</label>
-				<label>
-					State:
-					<input
-						type='text'
-						value={this.state.value}
-						onChange={this.handleChange}
-					/>
-				</label>
-				<label>
-					Zipcode:
-					<input
-						type='text'
-						value={this.state.value}
-						onChange={this.handleChange}
-					/>
-				</label>
-				<label>
-					Phone Number:
-					<input
-						type='text'
-						value={this.state.value}
-						onChange={this.handleChange}
-					/>
-				</label>
+				</div>
 				<input type='submit' value='Submit' />
 			</form>
 		);

@@ -5,7 +5,11 @@ function PlusMinusBtn() {
 	const [count, setCount] = useState(0);
 
 	function decreaseCount() {
-		setCount((prevCount) => prevCount - 1);
+		if (count > 0) {
+			setCount((prevCount) => prevCount - 1);
+		} else {
+			setCount(0);
+		}
 	}
 
 	function increaseCount() {
