@@ -18,18 +18,8 @@ class Login extends Component {
 						<br />
 						<button>Login</button>
 						<p>
-							New Guest? Click{" "}
-							<Link
-								to='/signup'
-								className={
-									window.location.pathname === "/signup"
-										? "nav-link active"
-										: "nav-link"
-								}
-							>
-								Here
-							</Link>
-							to register (it's easy)
+							New Guest? Click <Link to='/signup'>here </Link>
+							to register
 						</p>
 					</form>
 				</Container>

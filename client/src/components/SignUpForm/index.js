@@ -26,6 +26,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='email'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
@@ -35,6 +36,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='password'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
@@ -44,6 +46,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='confrimPass'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
@@ -54,6 +57,7 @@ class SignUpForm extends Component {
 						<input
 							type='text'
 							className='form-control'
+							id='firstName'
 							value={this.state.value}
 							onChange={this.handleChange}
 						/>
@@ -63,6 +67,7 @@ class SignUpForm extends Component {
 						<input
 							type='text'
 							className='form-control'
+							id='lastName'
 							value={this.state.value}
 							onChange={this.handleChange}
 						/>
@@ -74,6 +79,7 @@ class SignUpForm extends Component {
 						<input
 							type='text'
 							className='form-control'
+							id='pronouns'
 							value={this.state.value}
 							onChange={this.handleChange}
 						/>
@@ -83,6 +89,7 @@ class SignUpForm extends Component {
 						<input
 							type='text'
 							className='form-control'
+							id='bDay'
 							value={this.state.value}
 							onChange={this.handleChange}
 						/>
@@ -94,6 +101,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='addressOne'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
@@ -102,6 +110,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='addressTwo'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
@@ -110,6 +119,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='city'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
@@ -118,6 +128,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='state'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
@@ -126,6 +137,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='zip'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
@@ -135,6 +147,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
+						id='phone'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>

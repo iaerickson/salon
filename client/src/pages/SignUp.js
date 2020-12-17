@@ -9,20 +9,10 @@ class SignUp extends Component {
 			<div>
 				<Container>
 					<h1>Sign Up</h1>
-					<SignUpForm></SignUpForm>
+					<SignUpForm />
 
 					<p>
-						Returning Customer? Click{" "}
-						<Link
-							to='/login'
-							className={
-								window.location.pathname === "/login"
-									? "nav-link active"
-									: "nav-link"
-							}
-						>
-							Here
-						</Link>
+						Returning Customer? Click <Link to='/login'>here </Link>
 						to login
 					</p>
 				</Container>
