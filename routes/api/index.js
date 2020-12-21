@@ -2,7 +2,7 @@ const router = require("express").Router();
 const productRoutes = require("./products");
 const userRoutes = require("./users");
 
-// Post routes
+//User and product routes
 router.use("/products", productRoutes);
 router.use("/users", userRoutes);
 
