@@ -1,23 +1,24 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Container from "../components/Container";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 
-class Schedule extends Component {
+function Schedule() {
+	const [value, onChange] = useState(new Date());
 	//State
 
 	//HandleChanges
 
 	//Render
 
-	render() {
-		return (
-			<div>
-				<Container>
-					<h1>Book Your Appointment Now</h1>
-					{/* onClick Change/handle */}
-				</Container>
-			</div>
-		);
-	}
+	return (
+		<div>
+			<Container>
+				<h1>Book Your Appointment Now</h1>
+				<Calendar onChange={onChange} value={value} />
+			</Container>
+		</div>
+	);
 }
 
 export default Schedule;

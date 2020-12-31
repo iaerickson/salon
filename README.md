@@ -19,6 +19,8 @@ have all been completed, navigate yourself back to the main directory and enter
 
 ## Contributions
 
+https://www.npmjs.com/package/react-calendar
+
 ## Authors and Acknowledgments
 
 # License
