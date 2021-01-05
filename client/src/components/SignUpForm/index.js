@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+//Break up inputs into a component, use hooks to change state/value
 class SignUpForm extends Component {
 	constructor(props) {
 		super(props);
@@ -46,7 +46,7 @@ class SignUpForm extends Component {
 					<input
 						type='text'
 						className='form-control'
-						id='confrimPass'
+						id='confirmPass'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
