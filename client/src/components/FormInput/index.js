@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 function FormInput(props) {
-	// const [count, setCount] = useState(0);
+	const [value, setValue] = useState();
 
-	// handleChange(event) {
-	// 	this.setState({ value: event.target.value });
-	// }
+	function handleChange(event) {
+		setValue(event.target.value);
+	}
 
 	return (
 		<div>
@@ -13,8 +13,8 @@ function FormInput(props) {
 				type={props.type}
 				className='form-control'
 				id={props.id}
-				value={props.value}
-				onChange={props.onChange}
+				value={value}
+				onChange={handleChange}
 			/>
 		</div>
 	);
