@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FormInput from "../FormInput";
 //Break up inputs into a component, use hooks to change state/value
 class SignUpForm extends Component {
 	constructor(props) {
@@ -23,9 +24,8 @@ class SignUpForm extends Component {
 			<form onSubmit={this.handleSubmit}>
 				<div className='form-group'>
 					<label>Email:</label>
-					<input
-						type='text'
-						className='form-control'
+					<FormInput
+						type='email'
 						id='email'
 						value={this.state.value}
 						onChange={this.handleChange}
@@ -33,9 +33,8 @@ class SignUpForm extends Component {
 				</div>
 				<div className='form-group'>
 					<label>Password:</label>
-					<input
-						type='text'
-						className='form-control'
+					<FormInput
+						type='password'
 						id='password'
 						value={this.state.value}
 						onChange={this.handleChange}
@@ -43,9 +42,8 @@ class SignUpForm extends Component {
 				</div>
 				<div className='form-group'>
 					<label>Confirm Password:</label>
-					<input
-						type='text'
-						className='form-control'
+					<FormInput
+						type='password'
 						id='confirmPass'
 						value={this.state.value}
 						onChange={this.handleChange}
@@ -54,9 +52,8 @@ class SignUpForm extends Component {
 				<div className='form-group form-row'>
 					<div className='col'>
 						<label>First Name:</label>
-						<input
+						<FormInput
 							type='text'
-							className='form-control'
 							id='firstName'
 							value={this.state.value}
 							onChange={this.handleChange}
@@ -64,9 +61,8 @@ class SignUpForm extends Component {
 					</div>
 					<div className='col'>
 						<label>Last Name:</label>
-						<input
+						<FormInput
 							type='text'
-							className='form-control'
 							id='lastName'
 							value={this.state.value}
 							onChange={this.handleChange}
@@ -76,9 +72,8 @@ class SignUpForm extends Component {
 				<div className='form-group form-row'>
 					<div className='col'>
 						<label>Pronouns:</label>
-						<input
+						<FormInput
 							type='text'
-							className='form-control'
 							id='pronouns'
 							value={this.state.value}
 							onChange={this.handleChange}
@@ -86,9 +81,8 @@ class SignUpForm extends Component {
 					</div>
 					<div className='col'>
 						<label>Birthday:</label>
-						<input
+						<FormInput
 							type='text'
-							className='form-control'
 							id='bDay'
 							value={this.state.value}
 							onChange={this.handleChange}
@@ -98,45 +92,40 @@ class SignUpForm extends Component {
 
 				<div className='form-group'>
 					<label>Address 1:</label>
-					<input
+					<FormInput
 						type='text'
-						className='form-control'
 						id='addressOne'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
 
 					<label>Address 2:</label>
-					<input
+					<FormInput
 						type='text'
-						className='form-control'
 						id='addressTwo'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
 
 					<label>City:</label>
-					<input
+					<FormInput
 						type='text'
-						className='form-control'
 						id='city'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
 
 					<label>State:</label>
-					<input
+					<FormInput
 						type='text'
-						className='form-control'
 						id='state'
 						value={this.state.value}
 						onChange={this.handleChange}
 					/>
 
 					<label>Zipcode:</label>
-					<input
+					<FormInput
 						type='text'
-						className='form-control'
 						id='zip'
 						value={this.state.value}
 						onChange={this.handleChange}
@@ -144,9 +133,8 @@ class SignUpForm extends Component {
 				</div>
 				<div className='form-group'>
 					<label>Phone Number:</label>
-					<input
+					<FormInput
 						type='text'
-						className='form-control'
 						id='phone'
 						value={this.state.value}
 						onChange={this.handleChange}
