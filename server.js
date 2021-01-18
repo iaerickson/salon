@@ -30,7 +30,7 @@ app.use(function (err, req, res, next) {
 });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactcms");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/salon");
 
 // Start the API server
 app.listen(PORT, function () {

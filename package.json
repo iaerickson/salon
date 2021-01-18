@@ -4,7 +4,6 @@
   "description": "Repo for mobile-ready salon appointment website and in-store pick up",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node scripts/seedDB.js",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
