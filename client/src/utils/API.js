@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-	createNewUser: function (userData) {
+	createNewUser: (userData) => {
 		return axios.post("/api/users/signup", userData);
 	},
 };

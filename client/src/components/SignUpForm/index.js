@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FormInput from "../FormInput";
+import API from "../../utils/API";
 //Break up inputs into a component, use hooks to change state/value
 
 //  TODO
@@ -25,10 +26,23 @@ class SignUpForm extends Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	handleSubmit(event) {
+	handleSubmit = (event) => {
 		alert("A Name was submitted: " + this.state.value);
 		event.preventDefault();
-	}
+
+		API.createNewUser(this.state)
+			.then((res) => {
+				if (res.data.status === "error") {
+					throw new Error(res.data.message);
+				}
+				this.setState({
+					email: this.state.email,
+					password: this.state.password,
+					loggedIn: true,
+				});
+			})
+			.catch((err) => this.setState({ error: err.message }));
+	};
 
 	render() {
 		return (
