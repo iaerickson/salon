@@ -22,7 +22,7 @@ import API from "../../utils/API";
 class SignUpForm extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { value: "" };
+		this.state = { email: "", password: "", confirm: "", error: "" };
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
@@ -38,7 +38,7 @@ class SignUpForm extends Component {
 				this.setState({
 					email: this.state.email,
 					password: this.state.password,
-					loggedIn: true,
+					// loggedIn: true,
 				});
 			})
 			.catch((err) => this.setState({ error: err.message }));
