@@ -6,7 +6,7 @@ function ProductCard(props) {
 	return (
 		<div className='card'>
 			<div>
-				<img src={props.img} className='card-img-top' />
+				<img src={props.img} alt='' className='card-img-top' />
 				<h3>{props.item}</h3>
 				<p>{props.desc}</p>
 				<p>{props.price}</p>

@@ -6,6 +6,7 @@ import Store from "./pages/Store";
 import Schedule from "./pages/Schedule";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import Gallery from "./pages/Gallery";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 				<Navbar />
 				<Switch>
 					<Route exact path='/' component={Home} />
+					<Route exact path='/gallery' component={Gallery} />
 					<Route exact path='/store' component={Store} />
 					<Route exact path='/schedule' component={Schedule} />
 					<Route exact path='/login' component={Login} />
