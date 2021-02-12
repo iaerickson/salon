@@ -3,10 +3,6 @@ import Container from "../components/Container";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
-const disabledRanges = [];
-
-function tileDisabled({ date, view }) {}
-
 function Schedule() {
 	const [value, onChange] = useState(new Date());
 
