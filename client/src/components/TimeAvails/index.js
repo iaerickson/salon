@@ -1,6 +1,19 @@
 import React, { Component } from "react";
 
 //a modal pop up that shows scheduling availability for any given day
+
+//
+//TO DO
+//
+//Grab value from react calendar and pass as props
+//
+//grab pre-scheduled appointments from the day's date and load/reserve times
+//
+//allow blocks of time to be selected/reserved
+//
+//confirm reservation does not conflict with anything else
+//
+//toggle modal to be brought up with date selected
 function TimeAvails(props) {
 	return (
 		<div
