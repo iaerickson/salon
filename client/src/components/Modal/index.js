@@ -13,11 +13,10 @@ function Modal() {
 				Launch demo modal
 			</button>
 
-			{/* <!-- Modal --> */}
 			<div
 				className='modal fade'
 				id='exampleModal'
-				tabindex='-1'
+				tabIndex='-1'
 				role='dialog'
 				aria-labelledby='exampleModalLabel'
 				aria-hidden='true'
@@ -37,8 +36,8 @@ function Modal() {
 								<span aria-hidden='true'>&times;</span>
 							</button>
 						</div>
-						<div class='modal-body'>...</div>
-						<div class='modal-footer'>
+						<div className='modal-body'>...</div>
+						<div className='modal-footer'>
 							<button
 								type='button'
 								className='btn btn-secondary'
